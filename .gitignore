@@ -1,0 +1,8 @@
+/bin/
+.settings
+*.project
+
+/jonathan-osterman-arquillian/.classpath
+/jonathan-osterman-ejb/.classpath
+/jonathan-osterman-jar/.classpath
+/jonathan-osterman-webservice/.classpath

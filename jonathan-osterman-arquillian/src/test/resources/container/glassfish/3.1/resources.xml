@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC
+    "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN"
+    "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+	<jdbc-resource
+		pool-name="arquillian-connection-pool"
+		jndi-name="Ds-Sicc" />
+	<jdbc-connection-pool
+		name="arquillian-connection-pool-h2"
+		res-type="javax.sql.DataSource"
+		datasource-classname="org.h2.jdbcx.JdbcDataSource">
+		<property
+			name="user"
+			value="sa" />
+		<property
+			name="password"
+			value="" />
+		<property
+			name="url"
+			value="jdbc:h2:file:target/databases/h2/db" />
+	</jdbc-connection-pool>
+	<jdbc-connection-pool
+		name="arquillian-connection-pool"
+		res-type="javax.sql.DataSource"
+		datasource-classname="com.microsoft.sqlserver.jdbc.SQLServerDataSource"
+		is-isolation-level-guaranteed="false">
+		<property
+			name="serverName"
+			value="172.27.5.3" />
+		<property
+			name="portnumber"
+			value="1436" />
+		<property
+			name="databaseName"
+			value="SICC" />
+		<property
+			name="user"
+			value="usrdev" />
+		<property
+			name="password"
+			value="23devpw@#" />
+		<property
+			name="selectMethod"
+			value="cursor" />
+	</jdbc-connection-pool>
+</resources>
