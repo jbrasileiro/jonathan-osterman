@@ -42,16 +42,6 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- MODULES -->
-			<dependency>
-				<groupId>br.com.riachuelo</groupId>
-				<artifactId>fin-cliente-core</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>br.com.riachuelo</groupId>
-				<artifactId>fin-cliente-service</artifactId>
-				<version>${project.version}</version>
-			</dependency>
 			<!-- PROVIDED -->
 			<dependency>
 				<groupId>javax</groupId>
